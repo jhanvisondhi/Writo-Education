@@ -1,33 +1,101 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.app-container {
+.image-container {
+  width: 60%;
+}
+
+/* .image-container img {
+  width: 100%;
+} */
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form form {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  row-gap: 30px;
 }
 
-.app-header {
-  background-color: #4CAF50;
-  padding: 20px;
-  text-align: center;
-  color: white;
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px !important;
 }
 
-.app-main {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.app-footer {
-  background-color: #4CAF50;
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
   padding: 10px;
-  text-align: center;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    row-gap: 10px;
+}
+
+.button-group button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 8px;
+}
+
+.login-btn {
+  background-color: #3a244a;
   color: white;
+}
+
+.signup-btn {
+  background-color: #FFF;
+  color: #000;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-btn:hover {
+  background-color: #218838;
+}
+
+.signup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
